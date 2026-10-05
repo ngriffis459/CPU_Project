@@ -1,0 +1,18 @@
+library ieee;
+using std_logic
+
+entity Control_Unit is 
+		port (
+		opcode : in std_logic_vector(3 downto 0);
+		state : in std_logic;
+		
+		RSA : out std_logic_vector(1 downto 0);
+		RSB : out std_logic_vector(1 downto 0);
+		OP_SEL : std_logic_vector(2 downto 0);
+		
+		PC_LOAD : out std_logic
+	);
+end Control_Unit;
+
+
+begin architecture 
